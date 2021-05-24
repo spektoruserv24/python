@@ -1,11 +1,11 @@
-age = int(input('Сколько вам лет?'))
+number = 75
 
-if age < 18:
-    print('Доступ запрещен')
-elif age == 18:
-    print('Вам ровно 18 лет')
-    print('Что с вами делать')
+value = int(input('Ввдите чистло от 1 до 100'))
+
+if value == number:
+    print('Вы угадали!')
 else:
-    print('Доступ разрешен')
-
-print('Конец')
+    if value > number:
+        print('Нужно меньше')
+    else:
+        print('Нужно больше')
