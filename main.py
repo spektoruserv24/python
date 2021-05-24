@@ -1,4 +1,8 @@
-#result = input()
-#print('пользователь ввел', result)
-name = input('Как тебя зовут?')
-print('Привет', name)
+age = int(input('Сколько вам лет?'))
+
+if age < 18:
+    print('Доступ запрещен')
+if age > 18:
+    print('Доступ разрешен')
+
+print('Конец')
