@@ -1,22 +1,9 @@
-#Вывод числел от 0 до 100
+name = None
 
-#number = 0
-#while number <= 100:
-#    print(number)
-#    number = number + 1
+while True:
+    name = input('Кто создатель python? ')
+    if name == 'Гвидо':
+        break
+    print('Не верно')
 
-#Вывод чисел от 0 до n
-
-#number = 0
-#n = int(input('Введите n='))
-#while number <= n:
-#    print(number)
-#    number = number + 1
-
-#Вывод четных чисел от 0 до n
-number = 0
-n = int(input('Введите n='))
-while number <= n:
-    if number % 2 == 0:
-        print(number)
-    number = number + 1
+print('Верно')
