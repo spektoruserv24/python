@@ -1,11 +1,6 @@
-number = 75
+name = input('Кто создатель python? ')
+while name != 'Гвидо':
+    print('Не верно')
+    name = input('Кто создатель python')
 
-value = int(input('Ввдите чистло от 1 до 100'))
-
-if value == number:
-    print('Вы угадали!')
-else:
-    if value > number:
-        print('Нужно меньше')
-    else:
-        print('Нужно больше')
+print('Верно')
