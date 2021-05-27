@@ -1,10 +1,11 @@
+top5 = 'Первые 5 мест на соревнованиях: 1. Иванов 2. Петров 3. Сидоров 4.Орлов 5. Соколов'
 
-name = None
+start = top5.find('1')
+end = top5.find('4')
 
-while True:
-    name = input('Кто создатель python? ')
-    if name == 'Гвидо':
-        break
-    print('Не верно')
+top3 = top5[start: end]
 
-print('Верно')
+result = 'Поздравляем {} с успехом!' .format(top3.upper())
+
+print(result)
+
