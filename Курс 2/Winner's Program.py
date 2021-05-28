@@ -1,26 +1,17 @@
-empty_list = []
+print('СОРЕВНОВАНИЯ ПО PYTHON')
+count = int(input('Введите количество участников: '))
+i = count
+members = []
+while i > 0:
+    name = input('Кто занял {} место '.format(i))
+    members.append(name)
+    i-=1
 
-friends = ['Max', 'Leo', 'Kate']
+print('В соеревновании участвовали: ', sorted(members))
 
-print(len(friends))
+members.reverse()
 
-friends.append('Ron')
+result = members[:3]
 
-print(friends)
-print(len(friends))
-
-print(friends.pop())
-
-print(friends)
-
-friends.clear()
-print(friends)
-
-friends = ['Max', 'Leo', 'Kate']
-print(friends)
-
-friends.remove('Kate')
-print(friends)
-
-del friends[0]
-print(friends)
+result = 'Победители: {}. Поздравляем!'.format(result)
+print(result)
